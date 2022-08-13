@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Roboto:wght@400;500;700&display=swap");
+@import url(./grid.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+$white: #ffffff;
+$dark-g: #1b1e1e;
+$light-b: #81becb;
+$black: black;
+$dark: #171717;
+$gray: #a8a8a8;
+$brown: #2b2b2b;
+
+body {
+  background: $dark;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1800px;
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.nav {
+  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+}
+.border-color {
+  border-color: $brown;
+}
+.aside-bg {
+  background: $dark;
+  // border: 1px solid #2B2B2B;
+}
+.bg-color {
+  background: rgba(28, 29, 31, 0.5);
+}
+.dark-bg {
+  background: #212121;
+}
+.text-color {
+  color: $gray;
+  margin: 0 10px 3px 10px;
+}
+.aside-texth {
+  max-width: 290px;
+  width: 100%;
+  margin-top: 10px;
+}
+.aside-img {
+  width: 103px;
+  height: 80px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  max-width: 425px;
+  width: 100%;
+  height: 545px;
+}
+.text-width {
+  max-width: 205px;
+  width: 100%;
+}
+.swiper-button-prev {
+  font-size: 10px !important;
+  left: 2% !important;
+  color: #ffffff !important;
+  &::after {
+    padding: 10px !important;
+    font-size: 20px !important;
+    border-radius: 50% !important;
+    background: #81becb !important;
+    opacity: 0.8 !important;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.14) !important;
+  }
+}
+.swiper-button-next {
+  font-size: 10px !important;
+  right: 18% !important;
+  color: #ffffff !important;
+  &::after {
+    padding: 10px !important;
+    font-size: 20px !important;
+    border-radius: 50% !important;
+    background: #81becb !important;
+    opacity: 0.8 !important;
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.14) !important;
+  }
+}
+.swiper-wrapper {
+  margin-left: -14px !important;
+}
+.bg-color {
+  background: #181a19;
+}
+.family {
+  font-family: "Philosopher";
+}
+.text {
+  max-width: 1303px;
+  width: 100%;
+}
+.background {
+  background: rgba(28, 29, 31, 0.5);
+  border: 1px solid #2b2b2b;
+  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+}
+.footer {
+  background: radial-gradient(
+      696.2% 730.65% at 47.6% 26.27%,
+      rgba(24, 26, 25, 0.5) 0%,
+      rgba(36, 40, 43, 0.5) 68.62%
+    );
+  box-shadow: 0px -7px 16px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+}
+.text{
+  color: $gray;
+  &:hover{
+    color: $light-b;
+  }
+}
+.color{
+  color: $gray;
+}
+.left{
+  &::after{
+    content: "";
+    position: absolute;
+    width: 104px;
+    height: 1px;
+    background: $gray;
+    top: 40%;
+    left: 42%;
+    transform: rotate(90deg);
+    @media (max-width: 1440px) {
+      display: none;
+    }
+  }
+}
+.title{
+  color: #a8a8a8;
+}
+.icons{
+  margin: 0 10px;
+}
+.top{
+  border-top: 1px solid $gray;
+  margin-top: 20px;
+  padding: 30px 0 20px 0;
+}
+.battman{
+  position: absolute;
+  top: 150%;
+  right: 0;
+  z-index: -2;
+}
+.marvel{
+  top: 0;
+  position: absolute;
+  left: 0;
+  z-index: -2;
+}
