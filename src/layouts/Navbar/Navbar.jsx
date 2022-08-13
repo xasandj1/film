@@ -23,7 +23,7 @@ const Navbar = () => {
               className="max-w-[100px] md:max-w-[160px] w-full"
             />
           </Link>
-          <div className="screen-small">
+          <div className="screen-small block md:hidden">
             <button
               onClick={Show}
               className="flex items-center justify-center p-2 bg-[#81BECB] rounded-sm"
